@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+header
+{
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu
+{
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon-menu.svg);
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+header .leftSide
+{
+    display: flex;
+    align-items: center;
+}
+header .leftSide h2
+{
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+header .leftSide ul
+{
+    display: flex;
+    margin-left: 30px;
+}
+header .leftSide ul li
+{
+    margin: 0px 10px;
+}
+header .leftSide ul li a
+{
+    font-size: 15px;
+    color: #666;
+}
+header .rightSide
+{
+    display: flex;
+    align-items: center;
+}
+header .rightSide .cartImg
+{
+    width: 20px;
+    margin-right: 25px;
+}
+header .rightSide .userImg
+{
+    width: 40px;
+}
+
+.main
+{
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .leftSide
+{
+    width: 46%;
+}
+.main .leftSide .mainImg
+{
+    width: 100%;
+}
+.main .leftSide .mainImg img
+{
+    width: 100%;
+    border-radius: 30px;
+}
+.main .leftSide .thumbnailImg
+{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.main .leftSide .thumbnailImg img
+{
+    width: 70px;
+    border-radius: 10px;
+}
+.main .rightSide
+{
+    width: 50%;
+    padding: 0px 20px;
+}
+.main .rightSide h2
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(255, 115, 0);
+}
+.main .rightSide h1
+{
+    text-transform: capitalize;
+    font-size: 2.5em;
+}
+.main .rightSide p
+{
+    margin: 10px 0px;
+    color: #666;
+}
+.main .rightSide h3
+{
+    font-size: 20px;
+    display: inline;
+}
+.main .rightSide .discount
+{
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 208, 154);
+    font-size: 13px;
+    margin-left: 15px;
+    color: orangered;
+    font-weight: 600;
+}
+.main .rightSide .price
+{
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    text-decoration: line-through;
+}
+.main .rightSide .details
+{
+    display: flex;
+}
+.main .rightSide .details .quantity
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: rgb(226, 226, 226);
+    width: 100px;
+}
+.main .rightSide .details .quantity button
+{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: orangered;
+    font-weight: 600;
+}
+.main .rightSide .details .quantity span
+{
+    font-weight: 700;
+}
+.main .rightSide .details .cartBtn
+{
+    width: 230px;
+    height: 43px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 115, 0);
+    margin-left: 15px;
+    border-radius: 8px;
+}
+.main .rightSide .details .cartBtn button
+{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+@media screen and (max-width:415px)
+{
+    header {
+        padding: 10px 20px;
+    }
+    header .menu
+    {
+        display: block;
+    }
+    header .leftSide h2 {
+        font-size: 1.3em;
+        margin-left: 40px;
+    }
+    header .leftSide ul {
+        display: none;
+        margin-left: 30px;
+    }
+    .main {
+        flex-direction: column;
+        padding: 0;
+    }
+    .main .leftSide {
+        width: 100%;
+    }
+    .main .leftSide .mainImg img {
+        border-radius: 0px;
+    }
+    .main .leftSide .thumbnailImg {
+        display: none;
+    }
+    .main .rightSide {
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .main .rightSide h2 {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: rgb(255, 115, 0);
+    }
+    .main .rightSide h1 {
+        text-transform: capitalize;
+        font-size: 2.0em;
+        margin-top: 10px;
+    }
+    .main .rightSide p {
+        margin: 13px 0px;
+        color: #666;
+        line-height: 25px;
+    }
+    .main .rightSide .details {
+        display: flex;
+        flex-direction: column;
+    }
+    .main .rightSide .details .quantity {
+        width: 100%;
+    }
+    .main .rightSide .details .cartBtn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:500px)
+{
+    header {
+        padding: 10px 20px;
+    }
+    header .menu
+    {
+        display: block;
+    }
+    header .leftSide h2 {
+        font-size: 1.3em;
+        margin-left: 40px;
+    }
+    header .leftSide ul {
+        display: none;
+        margin-left: 30px;
+    }
+    .main {
+        flex-direction: column;
+        padding: 0;
+    }
+    .main .leftSide {
+        width: 100%;
+    }
+    .main .leftSide .mainImg img {
+        border-radius: 0px;
+    }
+    .main .leftSide .thumbnailImg {
+        display: none;
+    }
+    .main .rightSide {
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .main .rightSide h2 {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: rgb(255, 115, 0);
+    }
+    .main .rightSide h1 {
+        text-transform: capitalize;
+        font-size: 2.0em;
+        margin-top: 10px;
+    }
+    .main .rightSide p {
+        margin: 13px 0px;
+        color: #666;
+        line-height: 25px;
+    }
+    .main .rightSide .details {
+        display: flex;
+        flex-direction: column;
+    }
+    .main .rightSide .details .quantity {
+        width: 100%;
+    }
+    .main .rightSide .details .cartBtn {
+        width: 100%;
+        margin-left: 0;
+    }
+}

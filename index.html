@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="menu"></div>
+        <div class="leftSide">
+            <h2>sneakers</h2>
+            <ul>
+                <li><a href="">Collection</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="rightSide">
+            <img src="images/icon-cart.svg" alt="" class="cartImg">
+            <img src="images/image-avatar.png" alt="" class="userImg">
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="leftSide">
+            <div class="mainImg">
+                <img src="images/image-product-1.jpg" alt="">
+            </div>
+            <div class="thumbnailImg">
+                <img src="images/image-product-1-thumbnail.jpg" alt="">
+                <img src="images/image-product-2-thumbnail.jpg" alt="">
+                <img src="images/image-product-3-thumbnail.jpg" alt="">
+                <img src="images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+        </div>
+        <div class="rightSide">
+            <h2>sneaker company</h2>
+            <h1>fall limited edition sneakers</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae odit ipsam, hic quae aspernatur culpa autem delectus assumenda ipsa voluptatem.</p>
+            <h3>$125.00</h3><span class="discount">50%</span>
+            <span class="price">$225.00</span>
+            <div class="details">
+                <div class="quantity">
+                    <button onclick="decreaseCount()">-</button>
+                    <span id="count">0</span>
+                    <button onclick="increaseCount()">+</button>
+                </div>
+                <div class="cartBtn">
+                    <button>add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function increaseCount()
+        {
+            document.getElementById("count").innerHTML++;
+        }
+        function decreaseCount()
+        {
+            if(document.getElementById("count").innerHTML<=0)
+            {
+                document.getElementById("count").innerHTML=0;
+            }
+            else
+            {
+                document.getElementById("count").innerHTML--;
+            }
+            
+        }
+    </script>
+</body>
+</html>
